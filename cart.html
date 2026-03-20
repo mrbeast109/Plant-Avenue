@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Plant Avenue</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="home.html">🪴Plants Avenue</a>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-icons">
+            <i class="fa-regular fa-heart"></i>
+            <a href="cart.html" class="cart-icon-wrapper active">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <span class="cart-count">0</span>
+            </a>
+            <i class="fa-regular fa-user"></i>
+            <div class="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main class="cart-page fade-in-section">
+        <h1 class="page-title">Your Shopping Cart</h1>
+
+        <div class="cart-container">
+            <!-- Cart Items List -->
+            <div class="cart-items" id="cart-items-container">
+                <!-- Items injected by JS -->
+                <p>Loading cart...</p>
+            </div>
+
+            <!-- Order Summary -->
+            <div class="cart-summary">
+                <h2>Order Summary</h2>
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="cart-subtotal">$0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Handling Fee (5%)</span>
+                    <span id="cart-handling">$0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Delivery</span>
+                    <span id="cart-delivery">$0.00</span>
+                </div>
+                <hr>
+                <div class="summary-row total">
+                    <span>Total</span>
+                    <span id="cart-total">$0.00</span>
+                </div>
+                <button class="btn btn-primary checkout-btn" id="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <div class="footer-logo">
+                <h4>Plants Avenue</h4>
+                <p>Caring for plants enhances your space with life.</p>
+                <div class="socials">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+            <div class="footer-col">
+                <a href="home.html">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">Sale</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
